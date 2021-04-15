@@ -46,7 +46,7 @@ public class MainConfigOfProfile implements EmbeddedValueResolverAware {
         ComboPooledDataSource dataSource = new ComboPooledDataSource();
         dataSource.setUser(user);
         dataSource.setPassword(pwd);
-        dataSource.setJdbcUrl("jdbc:mysql://localhost:3306/test");
+        dataSource.setJdbcUrl("jdbc:mysql://172.16.37.51:3306/ifartdb");
         dataSource.setDriverClass(driverClass);
         return dataSource;
     }
@@ -57,7 +57,7 @@ public class MainConfigOfProfile implements EmbeddedValueResolverAware {
         ComboPooledDataSource dataSource = new ComboPooledDataSource();
         dataSource.setUser(user);
         dataSource.setPassword(pwd);
-        dataSource.setJdbcUrl("jdbc:mysql://localhost:3306/ssm_crud");
+        dataSource.setJdbcUrl("jdbc:mysql://172.16.37.51:3306/test");
         dataSource.setDriverClass(driverClass);
         return dataSource;
     }
@@ -68,7 +68,7 @@ public class MainConfigOfProfile implements EmbeddedValueResolverAware {
         ComboPooledDataSource dataSource = new ComboPooledDataSource();
         dataSource.setUser(user);
         dataSource.setPassword(pwd);
-        dataSource.setJdbcUrl("jdbc:mysql://localhost:3306/scw_0515");
+        dataSource.setJdbcUrl("jdbc:mysql://172.16.37.51:3306/hoteldb");
 
         dataSource.setDriverClass(driverClass);
         return dataSource;
