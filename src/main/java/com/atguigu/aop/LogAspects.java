@@ -31,7 +31,7 @@ public class LogAspects {
     @Before("pointCut()")
     public void logStart(JoinPoint joinPoint) {
         Object[] args = joinPoint.getArgs();
-        System.out.println("" + joinPoint.getSignature().getName() + "运行。。。@Before:参数列表是：{" + Arrays.asList(args) + "}");
+        System.out.println("" + joinPoint.getSignature().getName() + "运行。。。@Before:参数列表是：{" + Arrays.toString(args) + "}");
     }
 
     @After("com.atguigu.aop.LogAspects.pointCut()")
